@@ -211,9 +211,7 @@
   }
   .foto-fallback svg{ width:52px; height:52px; opacity:.7; }
   .foto-fallback span{ font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.06em; text-transform:uppercase; }
-  .foto-desktop, .foto-mobile{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:none; }
-  @media (min-width:881px){ .foto-desktop{ display:block; } }
-  @media (max-width:880px){ .foto-mobile{ display:block; } }
+  .foto-sobre{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 
   .foto-badge{
     position:absolute; bottom:16px; left:16px; z-index:5;
@@ -368,7 +366,7 @@
         <svg><use href="#ic-pessoa"/></svg>
         <span>Foto da Dra. Sabrina</span>
       </div>
-      <!-- SABRINA: troque pelo caminho da sua foto em PNG sem fundo (recorte/cutout) -->
+      <!-- SABRINA: troque pelo caminho da sua foto sem fundo. Precisa ser .png (ou .webp) para manter a transparência, .jpeg não tem fundo transparente -->
       <img class="hero-foto" src="foto-sabrina-recorte.png" alt="Dra. Sabrina Caixeta" onerror="this.style.display='none'">
     </div>
   </div>
@@ -525,13 +523,10 @@
         <span>Foto da Dra. Sabrina</span>
       </div>
       <!--
-        SABRINA: troque os arquivos abaixo pelas suas fotos.
-        foto-sabrina-desktop.jpg aparece em telas acima de 880px.
-        foto-sabrina-mobile.jpg (vertical) aparece em telas de celular.
+        SABRINA: troque o arquivo abaixo pela sua foto vertical.
         Se o caminho estiver errado, a imagem some e aparece o ícone de espaço reservado.
       -->
-      <img class="foto-desktop" src="foto-sabrina-desktop.jpg" alt="Dra. Sabrina Caixeta" onerror="this.style.display='none'">
-      <img class="foto-mobile" src="foto-sabrina-mobile.jpg" alt="Dra. Sabrina Caixeta" onerror="this.style.display='none'">
+      <img class="foto-sobre" src="foto-sabrina.jpeg" alt="Dra. Sabrina Caixeta" onerror="this.style.display='none'">
       <div class="foto-badge"><span>OAB/GO</span><strong>64.410</strong></div>
     </div>
     <div class="sobre-texto">
